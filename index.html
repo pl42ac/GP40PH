@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Diagram Quiz</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- Cache-Control meta tags to prevent caching -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <!-- Link to stylesheet with query string to force reload -->
+    <link rel="stylesheet" href="styles.css?v=1.0.1">
 </head>
 <body>
     <header>
@@ -24,6 +31,8 @@
             <p id="feedback" class="feedback"></p>
         </section>
     </main>
+
+    <!-- Link to script with query string to force reload -->
+    <script src="script.js?v=1.0.1"></script>
 </body>
-<script src="script.js"></script>
 </html>
